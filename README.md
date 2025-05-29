@@ -88,4 +88,5 @@ Contribuições são bem-vindas! Por favor, abra uma issue para discutir o que v
 ## Licença
 
 <!-- Especifique a licença do seu projeto, por exemplo: MIT -->
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações (se aplicável).
+Distribuído sob a licença [MIT](./LICENSE).
+
