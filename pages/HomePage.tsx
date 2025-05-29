@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 // Header is now part of MainLayout, so not imported here directly for rendering
 import { PromotionItem, StoreItem, CouponItem } from '../types';
-import { RoutePaths, APP_NAME } from '../constants';
+// import { RoutePaths, APP_NAME } from '../constants';
 
 const mockPromotions: PromotionItem[] = [
   { id: 'p1', name: 'Promoção Especial TV', imageUrl: 'https://picsum.photos/seed/promo1/300/200', discount: '30% OFF' },
