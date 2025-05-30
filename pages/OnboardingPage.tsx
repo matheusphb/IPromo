@@ -11,22 +11,22 @@ import { APP_NAME, APP_TAGLINE } from '../constants';
 const onboardingSlidesData: OnboardingContent[] = [
   {
     id: 1,
-    imageSrc: 'https://picsum.photos/seed/onboarding1/600/400',
+    imageSrc: '/IPromo/imagens/relatam_economia.jpeg',
     text: 'Mais de 90% dos clientes relatam economia real.',
   },
   {
     id: 2,
-    imageSrc: 'https://picsum.photos/seed/onboarding2/600/400',
+    imageSrc: '/IPromo/imagens/produtos_em promoção.jpeg',
     text: 'Pesquise milhares de produtos em promoção.',
   },
   {
     id: 3,
-    imageSrc: 'https://picsum.photos/seed/onboarding3/600/400',
+    imageSrc: '/IPromo/imagens/variados_seguimentos.jpeg',
     text: 'Nos mais variados seguimentos.',
   },
   {
     id: 4,
-    imageSrc: 'https://picsum.photos/seed/onboarding4/600/400',
+    imageSrc: '/IPromo/imagens/promoções_pensadas.jpeg',
     text: 'Receba ofertas exclusivas na loja e promoções pensadas para você!',
   }
 ];

@@ -6,23 +6,23 @@ import { PromotionItem, StoreItem, CouponItem } from '../types';
 // import { RoutePaths, APP_NAME } from '../constants';
 
 const mockPromotions: PromotionItem[] = [
-  { id: 'p1', name: 'Promoção Especial TV', imageUrl: 'https://picsum.photos/seed/promo1/300/200', discount: '30% OFF' },
-  { id: 'p2', name: 'Celulares em Oferta', imageUrl: 'https://picsum.photos/seed/promo2/300/200' },
-  { id: 'p3', name: 'Eletrodomésticos', imageUrl: 'https://picsum.photos/seed/promo3/300/200', discount: 'Até 50%' },
-  { id: 'p4', name: 'Moda Verão', imageUrl: 'https://picsum.photos/seed/promo4/300/200' },
+  { id: 'p1', name: 'Promoção Especial TV', imageUrl: '/IPromo/imagens/tv-oferta.jpeg', discount: '30% OFF' },
+  { id: 'p2', name: 'Celulares em Oferta', imageUrl: '/IPromo/imagens/Celulares_em_Oferta.jpeg' },
+  { id: 'p3', name: 'Eletrodomésticos', imageUrl: '/IPromo/imagens/Eletrodomesticos.jpeg', discount: 'Até 50%' },
+  { id: 'p4', name: 'Moda Verão', imageUrl: '/IPromo/imagens/Moda_Verao.jpeg' },
 ];
 
 const mockStores: StoreItem[] = [
-  { id: 's1', name: 'Loja do Zé', imageUrl: 'https://picsum.photos/seed/store1/150/100', distance: '500m' },
-  { id: 's2', name: 'Mercado Central', imageUrl: 'https://picsum.photos/seed/store2/150/100', distance: '1.2km' },
-  { id: 's3', name: 'Magazine Top', imageUrl: 'https://picsum.photos/seed/store3/150/100', distance: '2km' },
-  { id: 's4', name: 'Padaria Delícia', imageUrl: 'https://picsum.photos/seed/store4/150/100', distance: '800m' },
+  { id: 's1', name: 'Loja do Zé', imageUrl: '/IPromo/imagens/Loja_do_Ze.jpeg', distance: '500m' },
+  { id: 's2', name: 'Mercado Central', imageUrl: '/IPromo/imagens/Mercado_Central.jpeg', distance: '1.2km' },
+  { id: 's3', name: 'Magazine Top', imageUrl: '/IPromo/imagens/Magazine_Top.jpeg', distance: '2km' },
+  { id: 's4', name: 'Padaria Delícia', imageUrl: '/IPromo/imagens/Padaria_Delicia.jpeg', distance: '800m' },
 ];
 
 const mockCoupons: CouponItem[] = [
-  { id: 'c1', title: 'R$20 OFF em Compras', description: 'Acima de R$100 no Supermercado X', imageUrl: 'https://picsum.photos/seed/coupon1/100/100' },
-  { id: 'c2', title: 'Frete Grátis', description: 'Para eletrônicos selecionados', imageUrl: 'https://picsum.photos/seed/coupon2/100/100' },
-  { id: 'c3', title: '15% Pizzaria Bella', description: 'Em qualquer pizza grande', imageUrl: 'https://picsum.photos/seed/coupon3/100/100' },
+  { id: 'c1', title: 'R$20 OFF em Compras', description: 'Acima de R$100 no Supermercado X', imageUrl: '/IPromo/imagens/Supermerca_o_X.jpeg' },
+  { id: 'c2', title: 'Frete Grátis', description: 'Para eletrônicos selecionados', imageUrl: '/IPromo/imagens/Frete_Grátis.jpeg' },
+  { id: 'c3', title: '15% Pizzaria Bella', description: 'Em qualquer pizza grande', imageUrl: '/IPromo/imagens/pizza_grande.jpeg' },
 ];
 
 interface SectionProps {
