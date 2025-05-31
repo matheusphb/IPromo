@@ -9,8 +9,9 @@ import { PasswordRecoveryPage } from './pages/PasswordRecoveryPage';
 import { HomePage } from './pages/HomePage';
 import { GoogleRegisterPage } from './pages/GoogleRegisterPage';
 import { FacebookRegisterPage } from './pages/FacebookRegisterPage';
-import { ProfilePage } from './pages/ProfilePage'; // Import ProfilePage
-import { MainLayout } from './components/MainLayout'; // Import MainLayout
+import { ProfilePage } from './pages/ProfilePage';
+import { SupermarketModePage } from './pages/SupermarketModePage'; // Import SupermarketModePage
+import { MainLayout } from './components/MainLayout';
 import { RoutePaths } from './constants';
 
 const App: React.FC = () => {
@@ -30,6 +31,7 @@ const App: React.FC = () => {
         <Route element={<MainLayout />}>
           <Route path={RoutePaths.HOME} element={<HomePage />} />
           <Route path={RoutePaths.PROFILE} element={<ProfilePage />} />
+          <Route path={RoutePaths.SUPERMARKET_MODE} element={<SupermarketModePage />} /> 
           {/* Add other main app routes here that need Header and BottomNav */}
         </Route>
         

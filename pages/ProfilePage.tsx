@@ -1,27 +1,31 @@
-
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { RoutePaths, APP_NAME } from '../constants';
-import { UserIcon } from '../components/icons/UserIcon'; // Example icon
-import { ChevronLeftIcon } from '../components/icons/ChevronLeftIcon';
+import { UserIcon } from '../components/icons/UserIcon'; 
+import { ChevronLeftIcon } from '../components/icons/ChevronLeftIcon'; // Corrected: This is used as a right arrow.
+import { QrCodeIcon } from '../components/icons/QrCodeIcon'; // For Supermarket mode button
 
 export const ProfilePage: React.FC = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    // Perform logout logic here (e.g., clear tokens, state)
     console.log('User logged out');
-    navigate(RoutePaths.ONBOARDING); // Redirect to onboarding/login
+    navigate(RoutePaths.ONBOARDING); 
   };
 
-  const ActionButton: React.FC<{ onClick?: () => void; children: React.ReactNode, icon?: React.ReactNode }> = ({ onClick, children, icon }) => (
+  const handleNavigateToSupermarketMode = () => {
+    navigate(RoutePaths.SUPERMARKET_MODE);
+  };
+
+  const ActionButton: React.FC<{ onClick?: () => void; children: React.ReactNode, icon?: React.ReactNode, isNav?: boolean }> = 
+    ({ onClick, children, icon, isNav = true }) => (
     <button
       onClick={onClick}
-      className="w-full flex items-center text-left py-3 px-4 bg-white hover:bg-gray-50 text-gray-700 rounded-lg shadow-sm transition-colors duration-150 mb-3"
+      className="w-full flex items-center text-left py-3.5 px-4 bg-white hover:bg-gray-50 text-gray-700 rounded-lg shadow-sm transition-colors duration-150 mb-3"
     >
       {icon && <span className="mr-3 w-5 h-5 text-violet-600">{icon}</span>}
-      <span className="flex-grow">{children}</span>
-      <ChevronLeftIcon className="w-5 h-5 text-gray-400 transform rotate-180" />
+      <span className="flex-grow font-medium">{children}</span>
+      {isNav && <ChevronLeftIcon className="w-5 h-5 text-gray-400 transform rotate-180" />}
     </button>
   );
 
@@ -29,9 +33,6 @@ export const ProfilePage: React.FC = () => {
   return (
     <div className="p-4 sm:p-6 container mx-auto">
       <div className="flex items-center mb-6">
-        {/* <button onClick={() => navigate(-1)} className="p-2 mr-2 text-violet-600 hover:bg-violet-100 rounded-full">
-          <ChevronLeftIcon className="w-6 h-6" />
-        </button> */}
         <h1 className="text-2xl sm:text-3xl font-semibold text-gray-800">Meu Perfil</h1>
       </div>
 
@@ -50,12 +51,22 @@ export const ProfilePage: React.FC = () => {
         </button>
       </div>
       
+      {/* Supermarket Mode Demo Button */}
+      <div className="mb-4">
+        <ActionButton 
+            onClick={handleNavigateToSupermarketMode}
+            icon={<QrCodeIcon />}
+        >
+            Ativar Modo Supermercado (Loja Exemplo)
+        </ActionButton>
+      </div>
+      
       <div className="space-y-1">
         <ActionButton onClick={() => console.log('Navigate to My Coupons')}>
           Meus Cupons
         </ActionButton>
         <ActionButton onClick={() => console.log('Navigate to Order History')}>
-          Histórico de Pedidos
+          Histórico de Pedidos (Em breve)
         </ActionButton>
         <ActionButton onClick={() => console.log('Navigate to Settings')}>
           Configurações

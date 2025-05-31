@@ -1,4 +1,3 @@
-
 export const APP_NAME = "iPromo";
 export const APP_TAGLINE = "Não perca tempo! Economize!";
 
@@ -11,7 +10,8 @@ export const RoutePaths = {
   LOGIN: "/login",
   RECOVER_PASSWORD: "/recover-password",
   HOME: "/home",
-  PROFILE: "/profile", // Added Profile path
+  PROFILE: "/profile",
+  SUPERMARKET_MODE: "/supermarket-mode", // Added Supermarket Mode path
 };
 
 export const MOCK_USER_ACCOUNTS = [
