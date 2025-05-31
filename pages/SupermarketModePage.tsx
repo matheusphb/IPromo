@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { PromotionItem, CouponItem } from '../types'; // Assuming types can be reused
 import { QrCodeIcon } from '../components/icons/QrCodeIcon';
-import { ChevronLeftIcon } from '../components/icons/ChevronLeftIcon';
 
 // Mock data for this specific supermarket view
 const supermarketName = "Supermercado Exemplo";
