@@ -8,15 +8,15 @@ import { ChevronLeftIcon } from '../components/icons/ChevronLeftIcon';
 const supermarketName = "Supermercado Exemplo";
 
 const mockSupermarketPromotions: PromotionItem[] = [
-  { id: 'sp1', name: 'Arroz Parboilizado Tipo 1 - 5kg', imageUrl: '/images/promo_arroz.jpeg', discount: 'Leve 3 Pague 2' },
-  { id: 'sp2', name: 'Refrigerante Guaraná 2L', imageUrl: '/images/promo_refri.jpeg', discount: 'R$ 5,99' },
-  { id: 'sp3', name: 'Sabão em Pó Limpeza Total 1kg', imageUrl: '/images/promo_sabao.jpeg', discount: '20% OFF' },
-  { id: 'sp4', name: 'Oferta de Hortifruti do Dia', imageUrl: '/images/promo_horti.jpeg' },
+  { id: 'sp1', name: 'Arroz Parboilizado Tipo 1 - 5kg', imageUrl: '/imagens/promo_arroz.jpeg', discount: 'Leve 3 Pague 2' },
+  { id: 'sp2', name: 'Refrigerante Guaraná 2L', imageUrl: '/imagens/promo_refri.jpeg', discount: 'R$ 5,99' },
+  { id: 'sp3', name: 'Sabão em Pó Limpeza Total 1kg', imageUrl: '/imagens/promo_sabao.jpeg', discount: '20% OFF' },
+  { id: 'sp4', name: 'Oferta de Hortifruti do Dia', imageUrl: '/imagens/promo_horti.jpeg' },
 ];
 
 const mockSupermarketCoupons: CouponItem[] = [
-  { id: 'sc1', title: 'R$10 Desconto Carnes', description: 'Acima de R$50 em carnes bovinas.', imageUrl: '/images/coupon_carne.jpeg' },
-  { id: 'sc2', title: 'Pão Francês Grátis', description: 'Na compra de 1kg de mortadela.', imageUrl: '/images/coupon_pao.jpeg' },
+  { id: 'sc1', title: 'R$10 Desconto Carnes', description: 'Acima de R$50 em carnes bovinas.', imageUrl: '/imagens/coupon_carne.jpeg' },
+  { id: 'sc2', title: 'Pão Francês Grátis', description: 'Na compra de 1kg de mortadela.', imageUrl: '/imagens/coupon_pao.jpeg' },
 ];
 
 // Re-using card components from HomePage for consistency, ideally they would be more generic
